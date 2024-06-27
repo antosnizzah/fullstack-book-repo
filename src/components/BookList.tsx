@@ -29,8 +29,8 @@ const BookList: React.FC<BookListProps> = ({ books, onDelete, onUpdate }) => {
             <td>{book.author}</td>
             <td>{book.year_of_publication}</td>
             <td>
-              <button onClick={() => onUpdate(book)}><FolderPen size={12} color="#c92222" strokeWidth={1.5} absoluteStrokeWidth /></button>
-              <button onClick={() => onDelete(book.id)}><Trash2Icon size={12} color="#c92222" strokeWidth={2.0} /></button>
+              <button type="button" onClick={() => onUpdate(book)} title="Update Book"><FolderPen size={12} color="#c92222" strokeWidth={1.5} absoluteStrokeWidth /></button>
+              <button type="button" onClick={() => onDelete(book.id)} title="Delete Book"><Trash2Icon size={12} color="#c92222" strokeWidth={2.0} /></button>
             </td>
           </tr>
         ))}

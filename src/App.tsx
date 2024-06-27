@@ -66,7 +66,7 @@ const App= () => {
       <div className="marque-container">
       <div className='marquee'><h1>Book Repository</h1></div>
       </div>
-      <button type="button" onClick={() => setIsAdding(true)}><PlusIcon size={28} color="#25e218" strokeWidth={2.5} /></button>
+      <button type="button" onClick={() => setIsAdding(true)} title="Add Book"><PlusIcon size={28} color="#25e218" strokeWidth={2.5} /></button>
       {state.isLoading ? (
         <p> <ColorRing
         visible={true}
